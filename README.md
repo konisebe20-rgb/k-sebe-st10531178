@@ -122,6 +122,15 @@ git commit -m "Rename wholesale.html to enquiry.html and update links"
 git commit -m "Add shop search, filter and sort"
 git commit -m "Add form validation and quote response"
 git commit -m "Add Leaflet map to contact page"
+
+References: 
+Google for developers, 2026.SEO starter guide: The basics. [online] Available at: https://developers.google.com/search/docs/funda/mentals/seo-starter-guide [Accessed 14 August 2026].
+Interaction Design Foundation, 2026. What is wireframing? [online] Available at: https://www.interactiondesign.org/literature/topics/wireframing [Accessed 14 August 2026].
+Nelson Norman Group, 2026. Shopping carts, checkout and registration. [online] Available at: https://www.nngroup.com/reports/ecommerce-ux-shopping -carts-checkout-registration/ [Accessed 14 August 2026]
+
+	                                                 
+                        
+
 git commit -m "Add robots.txt and sitemap.xml"
 git commit -m "Update README and changelog"
 git push
