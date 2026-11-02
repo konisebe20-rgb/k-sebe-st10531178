@@ -4,7 +4,7 @@ A website for Riverside Bake & Brew, an artisan bakery and coffee shop on the Va
 Customers can see the menu, order ahead for collection or local delivery, contact the shop, and send wholesale enquiries.
 
 - **Live site:** https://YOUR-USERNAME.github.io/riverside-bake-and-brew/ *(replace after deploying)*
-- **Repository:** https://github.com/YOUR-USERNAME/riverside-bake-and-brew *(replace)*https://konisebe20-rgb.github.io/k-sebe-st10531178/
+- **Repository: https://konisebe20-rgb.github.io/k-sebe-st10531178/
 - **Student:** Konanani, Rosebank International (Braamfontein campus)
 
 ## Pages
