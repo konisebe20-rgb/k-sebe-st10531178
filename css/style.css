@@ -1,0 +1,522 @@
+/* ============================================
+   Riverside Bake & Brew — Site Stylesheet
+   ============================================ */
+
+/* 1. COLOUR SCHEME */
+:root {
+  --color-terracotta: #b3541e;
+  --color-terracotta-dark: #8f4116;
+  --color-cream: #faf3e9;
+  --color-cream-dark: #f0e4d3;
+  --color-forest-green: #2f4d3a;
+  --color-text: #2b1d13;
+  --color-white: #ffffff;
+  --color-border: #e3d3bd;
+}
+
+/* 2. RESET & BASE TYPOGRAPHY */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-text);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.65;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, "Playfair Display", serif;
+  color: var(--color-forest-green);
+  line-height: 1.25;
+}
+
+a {
+  color: var(--color-terracotta);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+/* 3. HEADER & NAVIGATION */
+header {
+  background: var(--color-forest-green);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+nav {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-family: Georgia, "Playfair Display", serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.logo span {
+  color: var(--color-terracotta);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: var(--color-cream);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a[aria-current="page"] {
+  color: var(--color-terracotta);
+  border-bottom-color: var(--color-terracotta);
+}
+
+.cart-link {
+  background: var(--color-terracotta);
+  color: var(--color-white) !important;
+  padding: 0.4rem 0.9rem !important;
+  border-radius: 20px;
+  border-bottom: none !important;
+}
+
+.cart-link:hover,
+.cart-link[aria-current="page"] {
+  background: var(--color-terracotta-dark);
+  border-bottom: none !important;
+}
+
+/* 4. BUTTONS */
+.btn-primary {
+  background: var(--color-terracotta);
+  color: var(--color-white);
+  padding: 0.75rem 1.6rem;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.btn-primary:hover {
+  background: var(--color-terracotta-dark);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid var(--color-terracotta);
+  color: var(--color-terracotta);
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn-secondary:hover {
+  background: var(--color-terracotta);
+  color: var(--color-white);
+}
+
+/* 5. PAGE INTRO / HERO */
+.page-intro,
+.hero {
+  background: url("../images/bakery.jpg");
+  color: var(--color-cream);
+  text-align: center;
+  padding: 3.5rem 1.5rem;
+}
+
+.page-intro h1,
+.hero h1 {
+  color: var(--color-white);
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.page-intro p,
+.hero p {
+  max-width: 680px;
+  margin: 0 auto 1.5rem;
+  font-size: 1.05rem;
+  color: var(--color-cream);
+}
+
+/* 6. MAIN CONTENT LAYOUT */
+main {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+main > section {
+  margin: 2.5rem 0;
+}
+
+main > section:not(.hero):not(.page-intro) {
+  background: var(--color-white);
+  padding: 2rem;
+  border-radius: 12px;
+  border-left: 5px solid var(--color-terracotta);
+  box-shadow: 0 3px 12px rgba(43, 29, 19, 0.06);
+}
+
+main > section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+main > section h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 46px;
+  height: 3px;
+  background: var(--color-terracotta);
+  border-radius: 2px;
+}
+
+main > section > p {
+  margin-top: 0.5rem;
+}
+
+main > section ul {
+  list-style: none;
+  display: grid;
+  gap: 0.7rem;
+}
+
+main > section ul li {
+  background: var(--color-cream);
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+/* 7. PRODUCT / SPECIALS / INTRO GRIDS */
+.product-grid,
+.today-grid,
+.intro-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.today-grid article,
+.intro-grid article {
+  background: var(--color-cream);
+  padding: 1.2rem;
+  border-radius: 10px;
+}
+
+.today-grid h3,
+.intro-grid h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.4rem;
+}
+
+.product-card {
+  background: var(--color-cream);
+  padding: 1.2rem;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.product-card img {
+  margin-bottom: 0.8rem;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  width: 100%;
+}
+
+.product-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.3rem;
+}
+
+.price {
+  color: var(--color-terracotta);
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0.4rem 0 0.8rem;
+}
+
+.add-to-cart {
+  width: 100%;
+}
+
+/* 8. CATEGORY FILTER NAV (shop.html) */
+.category-filter {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.category-filter a {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  color: var(--color-forest-green);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.category-filter a:hover {
+  background: var(--color-terracotta);
+  border-color: var(--color-terracotta);
+  color: var(--color-white);
+}
+
+/* 9. WHOLESALE TEASER */
+.wholesale-teaser {
+  text-align: center;
+}
+
+.wholesale-teaser p {
+  max-width: 600px;
+  margin: 0 auto 1.2rem;
+}
+
+/* 10. CONTACT PAGE */
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 2rem;
+}
+
+.contact-details address {
+  font-style: normal;
+}
+
+.contact-details p {
+  margin-bottom: 0.8rem;
+}
+
+.contact-details h2 {
+  margin-top: 1.5rem;
+}
+
+.contact-details h2:first-child {
+  margin-top: 0;
+}
+
+.contact-details dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.4rem 1rem;
+}
+
+.contact-details dt {
+  font-weight: 600;
+}
+
+/* 11. FORMS (contact, wholesale, cart) */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+form label {
+  font-weight: 600;
+  color: var(--color-forest-green);
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 1rem;
+  margin-top: 0.3rem;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: var(--color-terracotta);
+}
+
+form textarea {
+  resize: vertical;
+}
+
+fieldset {
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+legend {
+  padding: 0 0.4rem;
+  font-weight: 600;
+  color: var(--color-forest-green);
+}
+
+fieldset label {
+  display: block;
+  font-weight: normal;
+  padding: 0.35rem 0;
+  cursor: pointer;
+}
+
+fieldset input[type="radio"] {
+  margin-right: 0.5rem;
+  accent-color: var(--color-terracotta);
+}
+
+form button[type="submit"] {
+  align-self: flex-start;
+}
+
+/* 12. CART TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+}
+
+caption {
+  text-align: left;
+  font-weight: 600;
+  color: var(--color-forest-green);
+  margin-bottom: 0.8rem;
+}
+
+thead th {
+  text-align: left;
+  background: var(--color-forest-green);
+  color: var(--color-white);
+  padding: 0.7rem 0.9rem;
+  font-weight: 500;
+}
+
+thead th:first-child {
+  border-top-left-radius: 6px;
+}
+
+thead th:last-child {
+  border-top-right-radius: 6px;
+}
+
+tbody td {
+  padding: 0.8rem 0.9rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+tbody tr:nth-child(even) {
+  background: var(--color-cream);
+}
+
+#cart-table + p {
+  margin-top: 1.2rem;
+  font-size: 1.15rem;
+}
+
+#cart-total {
+  color: var(--color-terracotta);
+}
+
+/* 13. FOOTER */
+footer {
+  background: var(--color-forest-green);
+  color: var(--color-cream);
+  text-align: center;
+  padding: 1.6rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+/* 14. RESPONSIVE */
+@media (max-width: 700px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .page-intro h1,
+  .hero h1 {
+    font-size: 1.9rem;
+  }
+
+  .today-grid,
+  .intro-grid,
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tbody td {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: none;
+  }
+
+  tbody tr {
+    border-bottom: 1px solid var(--color-border);
+    padding: 0.5rem 0;
+  }
+  @media (max-width: 600px) {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+}

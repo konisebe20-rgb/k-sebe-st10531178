@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop / Menu | Riverside Bake &amp; Brew</title>
+<meta name="description" content="Browse fresh bread, pastries and coffee from Riverside Bake &amp; Brew and order online for collection or delivery.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://YOUR-USERNAME.github.io/riverside-bake-and-brew/shop.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Riverside Bake &amp; Brew">
+<meta property="og:title" content="Shop / Menu | Riverside Bake &amp; Brew">
+<meta property="og:description" content="Browse fresh bread, pastries and coffee from Riverside Bake &amp; Brew and order online for collection or delivery.">
+<meta property="og:url" content="https://YOUR-USERNAME.github.io/riverside-bake-and-brew/shop.html">
+<meta property="og:image" content="https://YOUR-USERNAME.github.io/riverside-bake-and-brew/images/sourdough.jpg">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/part3.css">
+
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header>
+<nav aria-label="Main navigation">
+<a href="index.html" class="logo">Riverside <span>Bake &amp; Brew</span></a>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="shop.html" aria-current="page">Shop / Menu</a></li>
+<li><a href="enquiry.html">Wholesale</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="cart.html" class="cart-link">Cart (<span id="cart-count">0</span>)</a></li>
+</ul>
+</nav>
+</header>
+
+<main id="main">
+
+<section class="page-intro" aria-labelledby="shop-heading">
+<h1 id="shop-heading">Shop Our Menu</h1>
+<p>Order ahead for collection, or choose local delivery at checkout. All items are baked fresh the same day.</p>
+</section>
+
+<section aria-labelledby="menu-heading">
+<h2 id="menu-heading">Menu</h2>
+
+<form class="shop-toolbar" id="shop-filters" role="search" aria-label="Search and filter the menu">
+<div>
+<label for="search">Search the menu</label>
+<input type="search" id="search" name="search" placeholder="e.g. croissant" autocomplete="off" maxlength="40">
+</div>
+<div>
+<label for="category">Category</label>
+<select id="category" name="category">
+<option value="all">All items</option>
+<option value="bread">Bread</option>
+<option value="pastries">Pastries</option>
+<option value="coffee">Coffee</option>
+</select>
+</div>
+<div>
+<label for="sort">Sort by</label>
+<select id="sort" name="sort">
+<option value="default">Menu order</option>
+<option value="price-asc">Price: low to high</option>
+<option value="price-desc">Price: high to low</option>
+<option value="name">Name: A to Z</option>
+</select>
+</div>
+</form>
+
+<p id="results-count" class="results-count" aria-live="polite"></p>
+<div class="product-grid" id="product-list"></div>
+<noscript><p>Please turn on JavaScript to see the menu, or <a href="contact.html">contact us</a> to order.</p></noscript>
+</section>
+
+</main>
+
+<footer>
+<nav aria-label="Footer navigation" class="footer-nav"><a href="index.html">Home</a> <a href="about.html">About Us</a> <a href="shop.html">Shop / Menu</a> <a href="enquiry.html">Wholesale</a> <a href="contact.html">Contact</a> <a href="cart.html">Cart</a></nav>
+<p>&copy; 2026 Riverside Bake &amp; Brew, Vereeniging. All rights reserved.</p>
+</footer>
+
+<script src="js/products.js" defer></script>
+<script src="js/cart.js" defer></script>
+<script src="js/main.js" defer></script>
+<script src="js/shop.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Cart | Riverside Bake &amp; Brew</title>
+<meta name="description" content="Review the bread, pastries and coffee in your cart and choose collection or local delivery from Riverside Bake &amp; Brew.">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://YOUR-USERNAME.github.io/riverside-bake-and-brew/cart.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Riverside Bake &amp; Brew">
+<meta property="og:title" content="Your Cart | Riverside Bake &amp; Brew">
+<meta property="og:description" content="Review the bread, pastries and coffee in your cart and choose collection or local delivery from Riverside Bake &amp; Brew.">
+<meta property="og:url" content="https://YOUR-USERNAME.github.io/riverside-bake-and-brew/cart.html">
+<meta property="og:image" content="https://YOUR-USERNAME.github.io/riverside-bake-and-brew/images/sourdough.jpg">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/part3.css">
+
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header>
+<nav aria-label="Main navigation">
+<a href="index.html" class="logo">Riverside <span>Bake &amp; Brew</span></a>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="shop.html">Shop / Menu</a></li>
+<li><a href="enquiry.html">Wholesale</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="cart.html" class="cart-link" aria-current="page">Cart (<span id="cart-count">0</span>)</a></li>
+</ul>
+</nav>
+</header>
+
+<main id="main">
+
+<section class="page-intro" aria-labelledby="cart-heading">
+<h1 id="cart-heading">Your Cart</h1>
+<p>Check your items, then choose collection or delivery. Need more? Go back to the <a href="shop.html">menu</a>.</p>
+</section>
+
+<section aria-label="Cart contents">
+<div class="table-wrap">
+<table id="cart-table">
+<caption>Items in your cart</caption>
+<thead>
+<tr>
+<th scope="col">Item</th>
+<th scope="col">Price</th>
+<th scope="col">Quantity</th>
+<th scope="col">Remove</th>
+</tr>
+</thead>
+<tbody id="cart-items">
+<tr><td colspan="4">Your cart is empty.</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>Total: R<span id="cart-total">0.00</span></strong></p>
+</section>
+
+<section aria-labelledby="fulfilment-heading">
+<h2 id="fulfilment-heading">Collection or Delivery</h2>
+<form action="cart.html" method="post" id="checkout-form" novalidate>
+<fieldset>
+<legend>Choose how you'd like to receive your order</legend>
+<label><input type="radio" name="fulfilment" value="collection" checked> Collection at shop</label>
+<label><input type="radio" name="fulfilment" value="delivery"> Local delivery</label>
+</fieldset>
+
+<label for="cart-name">Full Name</label>
+<input type="text" id="cart-name" name="name" autocomplete="name" data-rules="required name" required>
+<span class="field-error" id="cart-name-error" role="alert"></span>
+
+<label for="cart-phone">Phone Number</label>
+<input type="tel" id="cart-phone" name="phone" autocomplete="tel" placeholder="e.g. 082 123 4567" data-rules="required phone" required>
+<span class="field-error" id="cart-phone-error" role="alert"></span>
+
+<div id="address-wrap" hidden>
+<label for="cart-address">Delivery Address</label>
+<textarea id="cart-address" name="address" rows="3" autocomplete="street-address" data-rules="required minlen:10 maxlen:200"></textarea>
+<span class="field-error" id="cart-address-error" role="alert"></span>
+</div>
+
+<p class="field-error" id="checkout-error" role="alert"></p>
+<button type="submit" class="btn-primary">Checkout</button>
+</form>
+</section>
+
+</main>
+
+<footer>
+<nav aria-label="Footer navigation" class="footer-nav"><a href="index.html">Home</a> <a href="about.html">About Us</a> <a href="shop.html">Shop / Menu</a> <a href="enquiry.html">Wholesale</a> <a href="contact.html">Contact</a> <a href="cart.html">Cart</a></nav>
+<p>&copy; 2026 Riverside Bake &amp; Brew, Vereeniging. All rights reserved.</p>
+</footer>
+
+<script src="js/cart.js" defer></script>
+<script src="js/main.js" defer></script>
+<script src="js/forms.js" defer></script>
+</body>
+</html>

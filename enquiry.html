@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wholesale Enquiry | Riverside Bake &amp; Brew</title>
+<meta name="description" content="Enquire about wholesale bread, pastries and coffee bean supply from Riverside Bake &amp; Brew for your cafe or deli.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://YOUR-USERNAME.github.io/riverside-bake-and-brew/enquiry.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Riverside Bake &amp; Brew">
+<meta property="og:title" content="Wholesale Enquiry | Riverside Bake &amp; Brew">
+<meta property="og:description" content="Enquire about wholesale bread, pastries and coffee bean supply from Riverside Bake &amp; Brew for your cafe or deli.">
+<meta property="og:url" content="https://YOUR-USERNAME.github.io/riverside-bake-and-brew/enquiry.html">
+<meta property="og:image" content="https://YOUR-USERNAME.github.io/riverside-bake-and-brew/images/sourdough.jpg">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/part3.css">
+
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header>
+<nav aria-label="Main navigation">
+<a href="index.html" class="logo">Riverside <span>Bake &amp; Brew</span></a>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="shop.html">Shop / Menu</a></li>
+<li><a href="enquiry.html" aria-current="page">Wholesale</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="cart.html" class="cart-link">Cart (<span id="cart-count">0</span>)</a></li>
+</ul>
+</nav>
+</header>
+
+<main id="main">
+
+<section class="page-intro" aria-labelledby="wholesale-heading">
+<h1 id="wholesale-heading">Wholesale &amp; Bulk Orders</h1>
+<p>We supply bread, pastries and coffee beans to cafes, delis, restaurants and event organisers across the Vaal region. Fill in the form below to get an instant price estimate. We will confirm by email within two business days.</p>
+</section>
+
+<section aria-labelledby="wholesale-offer-heading">
+<h2 id="wholesale-offer-heading">What We Offer</h2>
+<ul>
+<li>Daily or weekly bread and pastry supply, delivered to your premises</li>
+<li>Wholesale coffee bean orders in bulk quantities</li>
+<li>Custom orders for events, functions and catering</li>
+<li>Volume discounts: 10% from 10 items a week, 15% from 30, 20% from 60</li>
+</ul>
+<p>Want to see what you could order? Browse the <a href="shop.html">menu</a> first.</p>
+</section>
+
+<section aria-labelledby="wholesale-form-heading">
+<h2 id="wholesale-form-heading">Enquiry Form</h2>
+<form action="https://formspree.io/f/YOUR_FORM_ID" method="post" id="enquiry-form" novalidate>
+<label for="business-name">Business Name</label>
+<input type="text" id="business-name" name="business-name" autocomplete="organization" data-rules="required minlen:2 maxlen:80" required>
+<span class="field-error" id="business-name-error" role="alert"></span>
+
+<label for="contact-name">Contact Person</label>
+<input type="text" id="contact-name" name="contact-name" autocomplete="name" data-rules="required name" required>
+<span class="field-error" id="contact-name-error" role="alert"></span>
+
+<label for="w-email">Email Address</label>
+<input type="email" id="w-email" name="email" autocomplete="email" data-rules="required email" required>
+<span class="field-error" id="w-email-error" role="alert"></span>
+
+<label for="w-phone">Phone Number</label>
+<input type="tel" id="w-phone" name="phone" autocomplete="tel" placeholder="e.g. 016 123 9876" data-rules="required phone" required>
+<span class="field-error" id="w-phone-error" role="alert"></span>
+
+<label for="w-product">Main Product</label>
+<select id="w-product" name="product" data-rules="required" required>
+<option value="">Choose a product...</option>
+</select>
+<span class="field-error" id="w-product-error" role="alert"></span>
+
+<label for="w-qty">Items Per Week (minimum 10)</label>
+<input type="number" id="w-qty" name="quantity" inputmode="numeric" step="1" data-rules="required int min:10 max:1000" required>
+<span class="field-error" id="w-qty-error" role="alert"></span>
+
+<label for="w-date">Preferred Start Date</label>
+<input type="date" id="w-date" name="start-date" data-rules="required startdate" required>
+<span class="field-error" id="w-date-error" role="alert"></span>
+
+<label for="order-details">Anything else we should know? (optional)</label>
+<textarea id="order-details" name="order-details" rows="5" maxlength="500" data-counter data-rules="maxlen:500"></textarea>
+<span class="char-count" id="order-details-count" aria-live="off"></span>
+<span class="field-error" id="order-details-error" role="alert"></span>
+
+<button type="submit" class="btn-primary">Get My Estimate</button>
+</form>
+<div id="enquiry-result" class="form-result" tabindex="-1" hidden></div>
+</section>
+
+</main>
+
+<footer>
+<nav aria-label="Footer navigation" class="footer-nav"><a href="index.html">Home</a> <a href="about.html">About Us</a> <a href="shop.html">Shop / Menu</a> <a href="enquiry.html">Wholesale</a> <a href="contact.html">Contact</a> <a href="cart.html">Cart</a></nav>
+<p>&copy; 2026 Riverside Bake &amp; Brew, Vereeniging. All rights reserved.</p>
+</footer>
+
+<script src="js/products.js" defer></script>
+<script src="js/cart.js" defer></script>
+<script src="js/main.js" defer></script>
+<script src="js/forms.js" defer></script>
+</body>
+</html>

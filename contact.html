@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Riverside Bake &amp; Brew</title>
+<meta name="description" content="Contact Riverside Bake &amp; Brew in Vereeniging, or find our opening hours and shop address.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://YOUR-USERNAME.github.io/riverside-bake-and-brew/contact.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Riverside Bake &amp; Brew">
+<meta property="og:title" content="Contact Us | Riverside Bake &amp; Brew">
+<meta property="og:description" content="Contact Riverside Bake &amp; Brew in Vereeniging, or find our opening hours and shop address.">
+<meta property="og:url" content="https://YOUR-USERNAME.github.io/riverside-bake-and-brew/contact.html">
+<meta property="og:image" content="https://YOUR-USERNAME.github.io/riverside-bake-and-brew/images/sourdough.jpg">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/part3.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  "name": "Riverside Bake & Brew",
+  "description": "Artisan bakery and coffee shop on the Vaal River in Vereeniging.",
+  "url": "https://YOUR-USERNAME.github.io/riverside-bake-and-brew/",
+  "image": "https://YOUR-USERNAME.github.io/riverside-bake-and-brew/images/sourdough.jpg",
+  "telephone": "+27161239876",
+  "email": "hello@riversidebakeandbrew.co.za",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "4 River Road",
+    "addressLocality": "Vereeniging",
+    "postalCode": "1930",
+    "addressRegion": "Gauteng",
+    "addressCountry": "ZA"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "06:30",
+      "closes": "17:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "07:00",
+      "closes": "14:00"
+    }
+  ],
+  "servesCuisine": "Bakery, Coffee",
+  "areaServed": "Vereeniging, Vaal Triangle"
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header>
+<nav aria-label="Main navigation">
+<a href="index.html" class="logo">Riverside <span>Bake &amp; Brew</span></a>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="shop.html">Shop / Menu</a></li>
+<li><a href="enquiry.html">Wholesale</a></li>
+<li><a href="contact.html" aria-current="page">Contact</a></li>
+<li><a href="cart.html" class="cart-link">Cart (<span id="cart-count">0</span>)</a></li>
+</ul>
+</nav>
+</header>
+
+<main id="main">
+
+<section class="page-intro" aria-labelledby="contact-heading">
+<h1 id="contact-heading">Get In Touch</h1>
+<p>Have a question about an order, or want to say hello? Reach out below.</p>
+</section>
+
+<section class="contact-layout" aria-label="Contact details and hours">
+
+<div class="contact-details">
+<h2>Shop Details</h2>
+<address>
+<p>Riverside Bake &amp; Brew<br>
+4 River Road<br>
+Vereeniging, 1930<br>
+Gauteng, South Africa</p>
+<p>Phone: <a href="tel:+27161239876">016 123 9876</a></p>
+<p>Email: <a href="mailto:hello@riversidebakeandbrew.co.za">hello@riversidebakeandbrew.co.za</a></p>
+</address>
+
+<h2>Opening Hours</h2>
+<dl>
+<dt>Monday - Friday</dt>
+<dd>06:30 - 17:00</dd>
+<dt>Saturday</dt>
+<dd>07:00 - 14:00</dd>
+<dt>Sunday</dt>
+<dd>Closed</dd>
+</dl>
+</div>
+
+<div class="contact-form">
+<h2>Send Us a Message</h2>
+<form action="mailto:hello@riversidebakeandbrew.co.za" method="post" enctype="text/plain" id="contact-form" data-recipient="hello@riversidebakeandbrew.co.za" novalidate>
+<label for="name">Full Name</label>
+<input type="text" id="name" name="name" autocomplete="name" data-rules="required name" required>
+<span class="field-error" id="name-error" role="alert"></span>
+
+<label for="email">Email Address</label>
+<input type="email" id="email" name="email" autocomplete="email" data-rules="required email" required>
+<span class="field-error" id="email-error" role="alert"></span>
+
+<label for="phone">Phone Number (optional)</label>
+<input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="e.g. 016 123 9876" data-rules="phone">
+<span class="field-error" id="phone-error" role="alert"></span>
+
+<label for="msg-type">Type of Message</label>
+<select id="msg-type" name="type" data-rules="required" required>
+<option value="">Choose one...</option>
+<option>Question about an order</option>
+<option>Delivery question</option>
+<option>Feedback or compliment</option>
+<option>Allergy or ingredient question</option>
+<option>Something else</option>
+</select>
+<span class="field-error" id="msg-type-error" role="alert"></span>
+
+<label for="message">Message</label>
+<textarea id="message" name="message" rows="5" maxlength="1000" data-counter data-rules="required minlen:10 maxlen:1000" required></textarea>
+<span class="char-count" id="message-count" aria-live="off"></span>
+<span class="field-error" id="message-error" role="alert"></span>
+
+<button type="submit" class="btn-primary">Review Message</button>
+</form>
+<div id="contact-result" class="form-result" tabindex="-1" hidden></div>
+</div>
+
+</section>
+
+<section aria-labelledby="map-heading">
+<h2 id="map-heading">Find Us</h2>
+<div id="map" role="region" aria-label="Map showing the Riverside Bake &amp; Brew shop in Vereeniging"></div>
+<noscript><p>The map needs JavaScript. Our address is 4 River Road, Vereeniging, 1930.</p></noscript>
+<p>Looking for our menu? Visit the <a href="shop.html">shop page</a>.</p>
+</section>
+
+</main>
+
+<footer>
+<nav aria-label="Footer navigation" class="footer-nav"><a href="index.html">Home</a> <a href="about.html">About Us</a> <a href="shop.html">Shop / Menu</a> <a href="enquiry.html">Wholesale</a> <a href="contact.html">Contact</a> <a href="cart.html">Cart</a></nav>
+<p>&copy; 2026 Riverside Bake &amp; Brew, Vereeniging. All rights reserved.</p>
+</footer>
+
+<script src="js/cart.js" defer></script>
+<script src="js/main.js" defer></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
+<script src="js/forms.js" defer></script>
+<script src="js/map.js" defer></script>
+</body>
+</html>
