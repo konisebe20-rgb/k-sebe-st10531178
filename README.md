@@ -3,7 +3,7 @@
 A website for Riverside Bake & Brew, an artisan bakery and coffee shop on the Vaal River in Vereeniging, Gauteng.
 Customers can see the menu, order ahead for collection or local delivery, contact the shop, and send wholesale enquiries.
 
-- **Live site:** https://YOUR-USERNAME.github.io/riverside-bake-and-brew/ *(replace after deploying)*
+
 - **Repository: https://konisebe20-rgb.github.io/k-sebe-st10531178/
 - **Student:** Konanani, Rosebank International (Braamfontein campus)
 
