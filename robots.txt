@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /cart.html
+
+Sitemap: https://YOUR-USERNAME.github.io/riverside-bake-and-brew/sitemap.xml
